@@ -1,0 +1,2 @@
+this solution misses the warning for missing inputs, i handled them differently but i appreciate any feedback for how to add them in my code.
+and im aware of how messy the css and js codes but i just wanted to make my first submit lol

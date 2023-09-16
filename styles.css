@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
+:root{
+    font-family: 'Space Mono', monospace;
+    --strong-cyan:hsl(172, 67%, 45%);
+    --very-dark-cyan:hsl(183, 100%, 15%);
+    --dark-grayish-cyan:hsl(186, 14%, 43%);
+    --grayish-cyan:hsl(184, 14%, 56%);
+    --light-grayish-cyan:hsl(185, 41%, 84%);
+    --very-light-grayish-cyan:hsl(189, 41%, 97%);
+    --white:hsl(0, 0%, 100%);
+    
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+
+}
+html,body {
+    height:100%;
+}
+
+body{
+    background-color: var(--light-grayish-cyan);
+    margin: 0;
+    min-height: calc(100vh + 100px);
+}
+
+.brand-name{
+    
+    margin:2.3rem 0;
+    text-align: center;
+}
+.brand-name > *{
+    margin:0;
+    color:var(--dark-grayish-cyan);
+    letter-spacing: 5px;
+
+}
+
+.container{
+    background-color: var(--white);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 3rem;
+}
+.container > * {
+    margin: 1rem 2rem;
+}
+
+.right-panel{
+    background-color: var(--white);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.left-panel > *{
+    margin-bottom:1rem;
+}
+
+h4{
+    color:var(--dark-grayish-cyan)
+}
+.calc-inputs{
+    border:0;
+    width:100%;
+    background-color: var(--very-light-grayish-cyan);
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: larger;
+    color: var(--very-dark-cyan);
+    
+}
+/*#num-of-ppl{
+    width: 100%;
+    border: 0;
+    background:var(--very-light-grayish-cyan);
+    text-align: right;
+} */
+
+.bill-amount{
+    padding-top: 1.8rem;
+}
+.input-box{
+    height:2.5rem;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width:95%;
+    margin-top:1rem;
+}
+svg{
+    position: absolute;
+    left:1rem;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body{
+  font-family: 'Space Mono', monospace;
+}
+
+.select-tip{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-tip{
+    flex:1;
+}
+.tip-option{
+    width: 45%;
+    min-height: 2rem;
+    background-color: var(--very-dark-cyan);
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border:0;
+    border-radius:5px;
+    padding:5px;
+    font-size: 1.3rem;
+    margin:5px;
+}
+.custom{
+    background-color: var(--very-light-grayish-cyan);
+    color:var(--very-dark-cyan);
+    text-align: center;
+}
+
+
+.resultbox{
+    background-color: var(--very-dark-cyan);
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    border-radius: 8px;
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+}
+.texts h4{
+    color:white;
+}
+.texts span{
+    color:var(--grayish-cyan);
+}
+.result h1{
+    color:var(--strong-cyan)
+}
+.reset{
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.perc:hover{
+    background-color: var(--light-grayish-cyan);
+    color:var(--very-dark-cyan);
+}
+
+.reset:hover{
+    background-color: var(--light-grayish-cyan);
+    color:var(--very-dark-cyan);
+}
+
+.input-box:hover{
+    border:1px solid var(--strong-cyan)
+}
+.selected{
+    background-color: var(--strong-cyan);
+    color:white;
+}
+@media all and (min-width:600px) {
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        width:55%;
+        min-width: 700px;
+        border-radius: 5px;
+        display: flex;
+        padding-bottom: 0px;
+        justify-content: space-around;
+        
+    }
+    .container > * {
+        flex:1;
+        flex-basis: 1;
+        margin:1rem;
+    }
+    .resultbox{
+        height: 100%;
+        gap:0;
+        justify-content: space-between;
+        
+        
+    }
+    .a1{
+        margin-top:1.5rem;
+    }
+    .amount{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 1rem;
+    }
+    
+    .result h1{
+        font-size:2.6rem;
+    }
+    .bill-amount{
+        padding-top: 1rem;
+    }
+    .select-tip{
+        justify-content: space-around;
+    }
+    .tip-option{
+        width: 30%;
+        height: 3rem;
+        
+    }
+
+}
